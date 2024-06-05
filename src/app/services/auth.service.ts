@@ -17,4 +17,8 @@ export class AuthService {
   public getPokemon() {
     return this.http.get(`https://pokeapi.co/api/v2/pokemon/ditto`);
   }
+
+  public getPokemonbyId(id: number) {
+    return this.http.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  }
 }
